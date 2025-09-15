@@ -18,7 +18,7 @@ It helps teams quickly bootstrap backend + frontend projects, with simple sample
 </div>
 
 <div align="center">
-Bokbokbok
+Bokbokbokbokbokbok
 <div>
 
 <br/>
