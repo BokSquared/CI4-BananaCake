@@ -53,7 +53,8 @@
             align-items: center;
             justify-content: space-between;
             padding: 60px;
-            background: linear-gradient(to right, #fdf4ec 50%, #f9c89b 50%);
+            min-height: 100vh;
+            background: linear-gradient(to right, #fdf4ec, #f9c89b);
         }
 
         .mainTitle{
@@ -116,17 +117,15 @@
 </div>
 
 <section class="cake_container">
-    <div class="row">
-        <div class="mainTitle">
+    <div class="mainTitle">
             <h5>Welcome to</h5>
             <h1>WYBIE'S BANANA CAKES</h1>
             <p>Bananas!</p>
             <a href="#" class="btn-orderMe">Order Now</a>
-        </div>
-
-        <div class="img-container">
-        
     </div>
+
+    <div class="img-container">
+        <!-- Lagyan mo to -->
     </div>
 </section>
 </body>
