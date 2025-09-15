@@ -21,6 +21,10 @@ It helps teams quickly bootstrap backend + frontend projects, with simple sample
 Banana Cake business for sample testing of github updates.
 </div>
 
+<div align="center">
+Japon - Editing once again
+</div>
+
 <br/>
 
 ![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/ci4-template)
