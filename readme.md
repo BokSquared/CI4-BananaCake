@@ -18,8 +18,8 @@ It helps teams quickly bootstrap backend + frontend projects, with simple sample
 </div>
 
 <div align="center">
-Bokbokbokbokbokbok Banana
-<div>
+Bokbokbok saging
+</div>
 
 <br/>
 
