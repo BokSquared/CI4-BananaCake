@@ -18,12 +18,8 @@ It helps teams quickly bootstrap backend + frontend projects, with simple sample
 </div>
 
 <div align="center">
-Banana Cake business for sample testing of github updates.
-</div>
-
-<div align="center">
-Japon - Editing once again and again
-</div>
+Bokbokbok
+<div>
 
 <br/>
 
