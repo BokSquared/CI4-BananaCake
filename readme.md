@@ -26,6 +26,7 @@ DOCUMENTATION
 - Configured the app/Controllers/Users.php
 - Configred the Routes into Users::Index in app/Config/Routes.php
 - Updated the CSS of landing page
+- Reconfigure the Database based on Docker
 
 Lists of Issues Closed:
 - Landing Page
