@@ -21,6 +21,25 @@ It helps teams quickly bootstrap backend + frontend projects, with simple sample
 Bokbokbok saging
 </div>
 
+DOCUMENTATION
+- Created a landing page HTML with minimal CSS in app/Views
+- Configured the app/Controllers/Users.php
+- Configred the Routes into Users::Index in app/Config/Routes.php
+- Updated the CSS of landing page
+
+Lists of Issues Closed:
+- Landing Page
+- Complete CSS for Landing Page
+
+List merged PRs
+- frontend/landingPage -> main
+- frontend/CSSLandingPage -> main
+
+
+Commits:
+Updating the documentation and landing page features
+
+
 <br/>
 
 ![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/ci4-template)

@@ -8,7 +8,7 @@
     <style>
         body{
             font-family: Arial, sans-serif;
-            background-color: #fdf4ec;
+            background-color: #E3CA9C;
             margin: 0;
             padding: 0;
         }
@@ -18,34 +18,34 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 60px;
-            background-color: #fff;
+            background-color: #F5E1C8; 
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         .header .title{
             font-size: 22px;
             font-weight: bold;
-            color: #5a2e0f;
+            color: #AF4B41;
             text-decoration: none;
         }
 
         .btn-header{
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 30px;
             margin: 0;
             padding: 0;
         }
 
         .btn-header li a{
             text-decoration: none;
-            color: #5a2e0f;
+            color: #AF4B41;
             font-weight: 500;
             transition: color 0.3s;
         }
 
         .btn-header li a:hover{
-            color: #d9822b
+            color: #D29E69;
         }
 
         .cake_container{
@@ -54,7 +54,7 @@
             justify-content: space-between;
             padding: 60px;
             min-height: 100vh;
-            background: linear-gradient(to right, #fdf4ec, #f9c89b);
+            background: linear-gradient(to right, #E3CA9C, #D29E69);
         }
 
         .mainTitle{
@@ -62,26 +62,19 @@
             padding-right: 30px;
         }
 
-        .mainTitle h5{
-            font-size: 20px;
-            color: #6c4c3a;
+        .mainTitle h5, p{
+            color: #AF4B41;
         }
 
         .mainTitle h1{
             font-size: 48px;
             font-weight: bold;
-            color: #5a2e0f;
+            color: #AF4B41;
             margin: 10px 0;
         }
 
-        .mainTitle p{
-            font-size: 16px;
-            color: #6c4c3a;
-            margin-bottom: 20px;
-        }
-
         .btn-orderMe{
-            background-color: #5a2e0f;
+            background-color: #AF4B41;
             color: #fff;
             padding: 12px 24px;
             text-decoration: none;
@@ -90,7 +83,7 @@
         }
 
         .btn-orderMe:hover{
-            background-color: #402010;
+            background-color: #D29E69;
         }
 
         .img-container{
@@ -99,8 +92,56 @@
         }
 
         .img-container img{
-            max-width: 400px;
+            width: 100%;
+            max-width: 450px;
+            height: auto;
             border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .img-container img:hover{
+            transform: scale(1.05);
+        }
+
+        .about_section {
+            padding: 80px 60px;
+            background-color: #F5E1C8;
+            color: #AF4B41;
+        }
+
+        .about_section div {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about_section h2 {
+            color: #AF4B41;
+            margin-bottom: 20px;
+        }
+
+        .about_section p {
+            color: #AF4B41;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .cake_container {
+                flex-direction: column;
+                padding: 30px 20px;
+            }
+
+            .mainTitle {
+                padding-right: 0;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .img-container img {
+                max-width: 90%;
+            }
         }
     </style>
 </head>
@@ -120,13 +161,25 @@
     <div class="mainTitle">
             <h5>Welcome to</h5>
             <h1>WYBIE'S BANANA CAKES</h1>
-            <p>Bananas!</p>
-            <a href="#" class="btn-orderMe">Order Now</a>
+            <p>Bananas!
+            🍌 About Our Banana Cakes</p>
+            <a href="#" class="btn-orderMe">Order Now 🎂</a>
     </div>
-
     <div class="img-container">
-        <!-- Lagyan mo to -->
+        <img src="https://hips.hearstapps.com/hmg-prod/images/banana-cake-vertical-2-668d5778abfc2.jpg?resize=768:*" alt="Banana Cake">
     </div>
+</section>
+
+<section class="about_section">
+        <div>
+            <h2>About Our Banana Cakes!</h2>
+            <p>
+                Made from ripe bananas, our cakes are moist, flavorful, and perfect for any occasion. 
+                Whether you're celebrating a birthday, anniversary, or just craving something sweet, 
+                our banana cakes are sure to delight your taste buds.  
+                Order now and treat yourself to the deliciousness of Wybie's Banana Cakes!
+            </p>
+        </div>
 </section>
 </body>
 </html>
