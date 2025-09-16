@@ -16,6 +16,8 @@ RUN docker-php-ext-configure intl \
 # Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
+
+
 # Set working dir BEFORE copying composer files so install runs in the right place
 WORKDIR /var/www/html
 

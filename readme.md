@@ -41,7 +41,7 @@ Bokbokbok saging
         <li>
           <a href="#key-components">Key Components</a>
         </li>
-        <li>
+        <lgg>
           <a href="#technology">Technology</a>
         </li>
       </ol>
