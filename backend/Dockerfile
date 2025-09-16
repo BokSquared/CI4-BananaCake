@@ -34,3 +34,8 @@ RUN { \
     echo "upload_max_filesize=32M"; \
     echo "post_max_size=32M"; \
     } > /usr/local/etc/php/conf.d/dev.ini
+
+
+# Install Xdebug
+RUN pecl install xdebug \
+    && docker-php-ext-enable xdebug
