@@ -12,7 +12,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url('https://www.pixelstalk.net/wp-content/uploads/2025/08/banana-desktop-wallpaper-HD-highly-detailed-bananas-in-a-tropical-setting-with-lush-green-leaves-and-bright-lighting.jpg');
+      background:linear-gradient(rgba(204, 153, 0, 0.12), rgba(204, 153, 0, 0.21)), 
+    url('https://www.pixelstalk.net/wp-content/uploads/2025/08/banana-desktop-wallpaper-HD-highly-detailed-bananas-in-a-tropical-setting-with-lush-green-leaves-and-bright-lighting.jpg');
       background-size: cover;
       color: #fff;
     }
