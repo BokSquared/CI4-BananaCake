@@ -7,10 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body{
+        body {
             font-family: Arial, sans-serif;
-            background-color: #E3CA9C;
-            margin: 0;
+            background: linear-gradient(to right, rgba(246, 204, 128, 0.9), rgba(240, 157, 74, 0.9)),
+                        url('https://www.pixelstalk.net/wp-content/uploads/2016/10/Banana-Wallpaper-Full-HD.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             padding: 0;
         }
 
@@ -49,66 +52,98 @@
             color: #D29E69;
         }
 
-        .cake_container{
+        .cake_container {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 60px;
-            min-height: 100vh;
-            background: linear-gradient(to right, #E3CA9C, #D29E69);
-        }
-
-        .mainTitle{
-            flex: 1;
-            padding-right: 30px;
-        }
-
-        .mainTitle h5, p{
-            color: #AF4B41;
-        }
-
-        .mainTitle h1{
-            font-size: 48px;
-            font-weight: bold;
-            color: #AF4B41;
-            margin: 10px 0;
-        }
-
-        .btn-orderMe{
-            background-color: #AF4B41;
+            padding: 80px 60px;
+            min-height: 90vh;
+            background: transparent; 
             color: #fff;
-            padding: 12px 24px;
-            text-decoration: none;
+        }
+
+        .mainTitle h5 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #AF4B41;
+        }
+
+        .mainTitle h1 {
+            font-size: 52px;
+            font-weight: 800;
+            margin: 15px 0;
+            color: #fff;
+        }
+
+        .mainTitle p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #AF4B41;
+        }
+
+        .btn-orderMe {
+            background-color: #AF4B41;
+            color: #FFD369;
+            padding: 14px 28px;
             font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
             transition: background 0.3s;
         }
 
-        .btn-orderMe:hover{
-            background-color: #D29E69;
+        .btn-orderMe:hover {
+            background-color: #e6b84e;
         }
 
-        .img-container{
+        .img-container {
             flex: 1;
-            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
         }
 
-        .img-container img{
-            width: 100%;
-            max-width: 450px;
+        .img-container::before {
+            content: '';
+            position: absolute;
+            right: 20px;
+            width: 570px;
+            height: 500px;
+            border: 4px solid white;
+            border-radius: 82% 18% 79% 21% / 81% 69% 31% 19%;
+            z-index: 0; 
+        }
+
+        .img-container::after {
+            content: '';
+            position: absolute;
+            right: 30px;
+            width: 550px;
+            height: 420px;
+            background-color: #FFD369; 
+            border-radius: 58% 42% 63% 37% / 41% 54% 46% 59%; 
+            z-index: -1;
+        }
+
+        .img-container img {
+            position: relative;
+            z-index: 1;
+            max-width: 380px;
             height: auto;
             border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
             transition: transform 0.3s;
         }
 
-        .img-container img:hover{
+        .img-container img:hover {
             transform: scale(1.05);
         }
 
         .about_section {
             padding: 80px 60px;
-            background-color: #F5E1C8;
-            color: #AF4B41;
+            background-color: rgba(245, 225, 200, 0.65); 
+            border-radius: 12px; 
         }
 
         .about_section div {
