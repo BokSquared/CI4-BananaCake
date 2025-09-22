@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sign Up</title>
   <style>
     body {
@@ -12,16 +12,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background:linear-gradient(rgba(204, 153, 0, 0.12), rgba(204, 153, 0, 0.21)), 
-    url('https://www.pixelstalk.net/wp-content/uploads/2025/08/banana-desktop-wallpaper-HD-highly-detailed-bananas-in-a-tropical-setting-with-lush-green-leaves-and-bright-lighting.jpg');
-      background-size: cover;
+      background:
+        linear-gradient(rgba(204,153,0,0.12), rgba(204,153,0,0.21)),
+        url('https://www.pixelstalk.net/wp-content/uploads/2025/08/banana-desktop-wallpaper-HD-highly-detailed-bananas-in-a-tropical-setting-with-lush-green-leaves-and-bright-lighting.jpg');
       background-size: cover;
       background-position: center;
       color: #fff;
     }
 
     .signup-card {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255,255,255,0.10);
       backdrop-filter: blur(10px);
       border-radius: 12px;
       padding: 40px 30px;
@@ -35,9 +35,7 @@
       font-size: 24px;
     }
 
-    .input-group {
-      margin-bottom: 15px;
-    }
+    .input-group { margin-bottom: 15px; }
 
     .input-group input {
       width: 100%;
@@ -46,14 +44,12 @@
       border-radius: 8px;
       outline: none;
       font-size: 14px;
-      background: rgba(255, 255, 255, 0.9); 
-      color: #333; 
-      box-sizing: border-box; 
+      background: rgba(255,255,255,0.9);
+      color: #333;
+      box-sizing: border-box;
     }
 
-    .input-group input:focus {
-      box-shadow: 0 0 5px #fff;
-    }
+    .input-group input:focus { box-shadow: 0 0 5px #fff; }
 
     .btn {
       width: 100%;
@@ -68,23 +64,37 @@
       margin-bottom: 15px;
     }
 
-    .btn:hover {
-      background: #ffd54f;
-      color: #3b0a45;
-    }
+    .btn:hover { background: #ffd54f; color: #3b0a45; }
 
     .options {
       font-size: 12px;
       margin-bottom: 20px;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start; /* checkbox left aligned */
       align-items: center;
+      gap: 8px;
     }
 
-    .options label {
+    .options label { display: flex; align-items: center; gap: 5px; }
+
+    /* Divider styling for "Access Quickly" */
+    .divider {
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 12px;
+      margin: 20px 0;
+      font-size: 12px;
+      color: #ffd54f;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-weight: 600;
+    }
+    .divider::before,
+    .divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.25);
     }
 
     .socials {
@@ -109,23 +119,11 @@
     .socials .facebook { background: #1877f2; color: #fff; }
     .socials .twitter { background: #1da1f2; color: #fff; }
 
-    .socials button:hover {
-      opacity: 0.85;
-    }
+    .socials button:hover { opacity: 0.85; }
 
-    .login-link {
-      margin-top: 15px;
-      font-size: 12px;
-    }
-
-    .login-link a {
-      color: #ffd54f;
-      text-decoration: none;
-    }
-
-    .login-link a:hover {
-      text-decoration: underline;
-    }
+    .login-link { margin-top: 15px; font-size: 12px; }
+    .login-link a { color: #ffd54f; text-decoration: none; }
+    .login-link a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -133,24 +131,29 @@
     <h2>Sign Up</h2>
     <form>
       <div class="input-group">
-        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Name" />
       </div>
       <div class="input-group">
-        <input type="email" placeholder="Email">
+        <input type="email" placeholder="Email" />
       </div>
       <div class="input-group">
-        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Password" />
       </div>
+
       <div class="options">
-        <label><input type="checkbox"> Remember me</label>
-        <span>Access Quickly</span>
+        <label><input type="checkbox" /> Remember me</label>
       </div>
+
       <button type="submit" class="btn">Sign Up</button>
+
+      <div class="divider">Access Quickly</div>
+
       <div class="socials">
         <button type="button" class="google">Google</button>
         <button type="button" class="facebook">Facebook</button>
         <button type="button" class="twitter">Twitter</button>
       </div>
+
       <div class="login-link">
         Already have an account? <a href="/login">Log In</a>
       </div>
