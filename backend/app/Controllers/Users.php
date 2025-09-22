@@ -5,10 +5,13 @@ use App\Controllers\BaseController;
 
 class Users extends BaseController
 {
-    public function index() : string
+    public function index(): string
     {
         return view('landingPage');
     }
-}
 
-?>
+    public function login(): string
+    {
+        return view('login'); 
+    }
+}
