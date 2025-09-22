@@ -154,7 +154,7 @@
         <li><a href="<?= base_url('/about') ?>">About</a></li>
         <li><a href="<?= base_url('/contact') ?>">Contact</a></li>
         <li><a href="<?= base_url('/login') ?>">Login</a></li>
-        <li><a href="<?= base_url('/register') ?>">Sign Up</a></li>
+        <li><a href="<?= base_url('/signup') ?>">Sign Up</a></li>
     </ul>
 </div>
 
@@ -202,7 +202,7 @@
 
         <ul class="space-y-2 text-sm">
         <li><a href="<?= base_url('/login') ?>" class="hover:text-yellow-200">Login</a></li>
-        <li><a href="<?= base_url('/register') ?>" class="hover:text-yellow-200">Sign Up</a></li>
+        <li><a href="<?= base_url('/signup') ?>" class="hover:text-yellow-200">Sign Up</a></li>
         <li><a href="#" class="hover:text-yellow-200">Mood Board</a></li>
         <li><a href="#" class="hover:text-yellow-200">Road Map</a></li>
         </ul>
