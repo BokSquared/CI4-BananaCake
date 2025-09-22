@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Cake - Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body{
             font-family: Arial, sans-serif;
@@ -163,6 +164,7 @@
             <h1>WYBIE'S BANANA CAKES</h1>
             <p>Bananas!
             🍌 About Our Banana Cakes</p>
+    </br>
             <a href="#" class="btn-orderMe">Order Now 🎂</a>
     </div>
     <div class="img-container">
@@ -181,5 +183,35 @@
             </p>
         </div>
 </section>
+<footer class="bg-[#AF4B41] text-white py-8 mt-10">
+  <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+    <div>
+      <h2 class="text-2xl font-extrabold">Wybie's Banana Cake 🍌</h2>
+      <p class="text-sm mt-2 max-w-xs">
+        Baked with love, crafted with bananas.  
+        Every slice is a taste of joy and comfort.
+      </p>
+    </div>
+
+    <div class="md:col-span-2 grid grid-cols-2 gap-6"> 
+        <ul class="space-y-2 text-sm">
+        <li><a href="<?= base_url('/home') ?>" class="hover:text-yellow-200">Home</a></li>
+        <li><a href="<?= base_url('/about') ?>" class="hover:text-yellow-200">About</a></li>
+        <li><a href="<?= base_url('/contact') ?>" class="hover:text-yellow-200">Contact</a></li>
+        </ul>
+
+        <ul class="space-y-2 text-sm">
+        <li><a href="<?= base_url('/login') ?>" class="hover:text-yellow-200">Login</a></li>
+        <li><a href="<?= base_url('/register') ?>" class="hover:text-yellow-200">Sign Up</a></li>
+        <li><a href="#" class="hover:text-yellow-200">Mood Board</a></li>
+        <li><a href="#" class="hover:text-yellow-200">Road Map</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="text-center text-xs text-gray-200 mt-6">
+        © 2025 Wybie's Banana Cake. All rights reserved.
+    </div>
+</footer>
 </body>
 </html>
