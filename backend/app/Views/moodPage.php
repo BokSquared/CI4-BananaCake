@@ -12,7 +12,7 @@
 </style>
 </head>
 <body class="font-sans">
-  <div class="max-w-7xl mx-auto py-12 px-6 grid md:grid-cols-3 gap-8">
+  <div class="max-w-7xl mx-auto py-12 px-6 grid md:grid-cols-2 gap-8">
     <div class="bg-white shadow-lg rounded-xl p-8 flex flex-col items-center text-center">
         <h2 class="text-xl font-semibold tracking-wide text-gray-700">WYBIE’S</h2>
         <p class="tracking-[0.6em] uppercase text-sm text-gray-500 mb-6">Palette</p>
@@ -38,9 +38,19 @@
 
 <div class="bg-white shadow-lg rounded-xl p-8 flex flex-col items-center text-center">
     <h2 class="text-xl font-semibold tracking-wide text-gray-700 mb-6">BRAND VIBE</h2>
-    <div class="grid grid-cols-2 gap-6 mb-8">
-        <div class="h-60 w-full rounded-2xl bg-[#FFD369] flex items-center justify-center text-[#AF4B41] font-bold text-4xl shadow-md">🍌</div>
-        <div class="h-60 w-full rounded-2xl bg-[#AF4B41] flex items-center justify-center text-[#FFD369] font-bold text-4xl shadow-md">🎂</div>
+    <div class="grid grid-cols-4 gap-2 mb-8">
+        <div class="h-60 w-full rounded-2xl bg-[#FFD369] flex items-center justify-center text-[#AF4B41] font-bold text-2xl shadow-md">🍌</div>
+        <div class="h-60 w-full rounded-2xl bg-[#AF4B41] flex items-center justify-center text-[#FFD369] font-bold text-2xl shadow-md">🎂</div>
+        <div class="grid grid-cols-2 gap-2 w-full col-span-2">
+            <img src="https://www.shutterstock.com/image-photo/assorted-pastry-bread-arranged-on-600nw-2169704423.jpg" 
+            class="rounded-lg object-cover h-24 w-full">
+            <img src="https://www.thespruceeats.com/thmb/JFnuCS7F3h_DKFXEhKNf0lzBGtM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mille-feuille-homemade-napoleon-recipe-2394442-hero-01-aa2f20cd8a0f464ebfbe059927007b10.jpg" 
+            class="rounded-lg object-cover h-24 w-full">
+            <img src="https://images.unsplash.com/photo-1574376407492-c3cf78231def?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            class="rounded-lg object-cover h-24 w-full">
+            <img src="https://www.momontimeout.com/wp-content/uploads/2021/07/banana-split-sundae.jpeg" 
+            class="rounded-lg object-cover h-24 w-full">
+        </div>
     </div>
     <div class="relative w-full">
         <img src="https://elements-resized.envatousercontent.com/elements-cover-images/6ea6ee35-8ef1-4465-8b54-90cd1a3842af?w=433&cf_fit=scale-down&q=85&format=auto&s=c2dd69645b281f3941079064749c1182d550aed1344045a80918d303076b8e16" 
@@ -52,31 +62,74 @@
 
 <div class="bg-white shadow-lg rounded-xl p-8 flex flex-col items-center text-center space-y-6">
   <h2 class="text-xl font-semibold tracking-wide text-gray-700 mb-1">Typography Showcase</h2>
-  
-  <p class="text-3xl font-extrabold text-[#AF4B41] mb-2" style="font-family: 'Playfair Display', serif;">Playfair Display</p>
-  <p class="text-2xl font-semibold text-[#FFD369] mb-2" style="font-family: 'Poppins', sans-serif;">Poppins</p>
-  <p class="text-gray-600 text-sm mb-4">Elegant, friendly, and modern fonts for a cozy bakery vibe.</p>
-  
-  <div class="flex gap-4 mb-6">
-    <button class="bg-[#AF4B41] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#9b3e36] transition">Cakes</button>
-    <button class="bg-[#FFD369] text-[#AF4B41] px-4 py-2 rounded-lg font-semibold hover:bg-[#e6c35b] transition">Bananas</button>
-    <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg font-semibold hover:bg-gray-300 transition">Deserts</button>
-  </div>
-  
-  <div class="grid grid-cols-2 gap-2 w-full">
-    <img src="https://www.shutterstock.com/image-photo/assorted-pastry-bread-arranged-on-600nw-2169704423.jpg" 
-    class="rounded-lg object-cover h-24 w-full">
-    <img src="https://www.thespruceeats.com/thmb/JFnuCS7F3h_DKFXEhKNf0lzBGtM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mille-feuille-homemade-napoleon-recipe-2394442-hero-01-aa2f20cd8a0f464ebfbe059927007b10.jpg" 
-    class="rounded-lg object-cover h-24 w-full">
-    <img src="https://images.unsplash.com/photo-1574376407492-c3cf78231def?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-    class="rounded-lg object-cover h-24 w-full">
-    <img src="https://www.momontimeout.com/wp-content/uploads/2021/07/banana-split-sundae.jpeg" 
-    class="rounded-lg object-cover h-24 w-full">
-</div>
+  <h5 class="text-left text-gray-400 font-medium mb-1">Heading font</h5>
+    <p class="text-3xl font-extrabold text-[#AF4B41] mb-2" style="font-family: 'Playfair Display', serif;">Playfair Display</p>
+    <h5 class="text-left text-gray-400 font-medium mb-1">Body font</h5>
+    <p class="text-2xl font-semibold text-[#FFD369] mb-2" style="font-family: 'Poppins', sans-serif;">Poppins</p>
+    <p class="text-gray-600 text-sm mb-4">Elegant, friendly, and modern fonts for a cozy bakery vibe.</p>
 </div>
 
-
+<div class="bg-white shadow-lg rounded-xl p-8 flex flex-col items-center text-center space-y-6">
+  <h2 class="text-xl font-semibold tracking-wide text-gray-700 mb-1">Buttons</h2>
+    <h5 class="text-left text-gray-400 font-medium mb-1">Light mode</h5>
+    <div class="flex gap-4 mb-6">
+        <button class="bg-[#AF4B41] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#9b3e36] transition dark:bg-[#8c3b34] dark:text-white dark:hover:bg-[#752f29]">Primary</button>
+        <button class="bg-[#FFD369] text-[#AF4B41] px-4 py-2 rounded-lg font-semibold hover:bg-[#e6c35b] transition dark:bg-[#D29E69] dark:text-[#FFD369] dark:hover:bg-[#c99055]">Secondary</button>
+        <button class="bg-transparent border border-[#FFD369] text-[#AF4B41] px-4 py-2 rounded-lg font-semibold hover:bg-[#FFD369] hover:text-[#AF4B41] transition dark:border-[#D29E69] dark:text-[#FFD369] dark:hover:bg-[#D29E69] dark:hover:text-[#AF4B41]">Border</button>
+        <button class="bg-gray-200 text-gray-400 px-4 py-2 rounded-lg font-semibold cursor-not-allowed" disabled>Disabled</button>
+    </div>
+    <h5 class="text-left text-gray-400 font-medium mb-1">Dark mode</h5>
+    <div class="bg-[#5C1C1C] p-6 rounded-xl flex gap-4 mb-6">
+        <button class="bg-[#AF4B41] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#9b3e36] transition dark:bg-[#8c3b34] dark:text-white dark:hover:bg-[#752f29]">Primary</button>
+        <button class="bg-[#FFD369] text-[#AF4B41] px-4 py-2 rounded-lg font-semibold hover:bg-[#e6c35b] transition dark:bg-[#D29E69] dark:text-[#FFD369] dark:hover:bg-[#c99055]">Secondary</button>
+        <button class="bg-transparent border border-[#FFD369] text-[#AF4B41] px-4 py-2 rounded-lg font-semibold hover:bg-[#FFD369] hover:text-[#AF4B41] transition dark:border-[#D29E69] dark:text-[#FFD369] dark:hover:bg-[#D29E69] dark:hover:text-[#AF4B41]">Border</button>
+        <button class="bg-gray-200 text-gray-400 px-4 py-2 rounded-lg font-semibold cursor-not-allowed" disabled>Disabled</button>
+    </div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6">
+  <div class="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center text-center mb-8">
+    <h2 class="text-2xl font-semibold tracking-wide text-gray-700">Card Samples</h2>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6 mb-12">
+    <div class="bg-white border rounded-xl p-6 shadow-lg flex flex-col justify-between">
+      <h3 class="font-bold text-lg mb-2 text-[#AF4B41]">Supreme!</h3>
+      <p class="text-gray-500 mb-4">More banana cake dishes to be discovered.</p>
+      <a href="#" class="text-blue-500 text-sm mt-auto">Read more</a>
+    </div>
+    <div class="bg-white border rounded-xl p-6 shadow-lg flex flex-col justify-between">
+      <h3 class="font-bold text-lg mb-2 text-[#AF4B41]">Subscribe to our Patrons!</h3>
+      <p class="text-gray-500 mb-4">Taste our experiments with different kinds of bananas.</p>
+      <a href="#" class="text-blue-500 text-sm mt-auto">Read more</a>
+    </div>
+    <div class="bg-white border rounded-xl p-6 shadow-lg flex flex-col justify-between">
+      <h3 class="font-bold text-lg mb-4 text-[#AF4B41] break-words">
+        "Life is full of bananas—sometimes sweet, sometimes a little mushy, but always worth peeling."
+      </h3>
+      <a href="#" class="text-blue-500 text-sm mt-auto">Read more</a>
+    </div>
   </div>
 
+  <div class="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center text-center mb-8">
+    <h2 class="text-2xl font-semibold tracking-wide text-gray-700">Logos</h2>
+  </div>
+  <div class="grid md:grid-cols-2 gap-8 mb-12">
+    <div class="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center text-center">
+      <h3 class="font-semibold text-lg text-gray-700 mb-4">Banana - Circle</h3>
+      <div class="w-32 h-32 flex items-center justify-center mb-4">
+        <img src="https://static.vecteezy.com/system/resources/previews/045/952/907/non_2x/illustration-of-a-tempting-banana-cake-icon-great-for-bakery-logos-or-dessert-menus-vector.jpg"
+             class="rounded-full object-cover w-full h-full border-4 border-[#FFD369]">
+      </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center text-center">
+      <h3 class="font-semibold text-lg text-gray-700 mb-4">Banana - Square</h3>
+      <div class="w-32 h-32 flex items-center justify-center mb-4">
+        <img src="https://static.vecteezy.com/system/resources/previews/045/952/907/non_2x/illustration-of-a-tempting-banana-cake-icon-great-for-bakery-logos-or-dessert-menus-vector.jpg"
+             class="rounded-xl object-cover w-full h-full border-4 border-[#FFD369]">
+      </div>
+    </div>
+  </div>
+
+</div>
 </body>
 </html>
