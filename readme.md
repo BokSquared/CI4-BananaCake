@@ -26,20 +26,13 @@ DOCUMENTATION
 - Configured the app/Controllers/Users.php
 - Configred the Routes into Users::Index in app/Config/Routes.php
 - Updated the CSS of landing page
-- Reconfigure the Database based on Docker
 
-Lists of Issues Closed:
-- Landing Page
-- Complete CSS for Landing Page
-
-List merged PRs
-- frontend/landingPage -> main
-- frontend/CSSLandingPage -> main
-
-
-Commits:
-Updating the documentation and landing page features
-
+(Sept 23, 2025)
+- Finished the landing page
+- Addded Log In page 
+- Added Sign up page 
+- Added Mood Board 
+- Added Road Map 
 
 <br/>
 
