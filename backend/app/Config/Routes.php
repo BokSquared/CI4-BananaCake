@@ -11,3 +11,5 @@ $routes->get('/login', 'Users::login');
 $routes->get('/signup', 'Users::signup');
 
 $routes->get('/moodPage', 'Users::moodPage');
+
+$routes->get('/roadMap', 'Users::roadMap');

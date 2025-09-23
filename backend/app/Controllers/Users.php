@@ -24,4 +24,9 @@ class Users extends BaseController
     {
         return view('moodPage'); 
     }
+
+    public function roadMap(): string
+    {
+        return view('roadMap'); 
+    }
 }
