@@ -34,6 +34,10 @@ DOCUMENTATION
 - Added Mood Board 
 - Added Road Map 
 
+(Sept 29, 2025)
+- Redesigned the landing page 
+- Added header, footer, 4 buttons, 3 cards and cta 
+
 <br/>
 
 ![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/ci4-template)
