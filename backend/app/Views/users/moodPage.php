@@ -94,22 +94,10 @@
     <h2 class="text-2xl font-semibold tracking-wide text-gray-700">Card Samples</h2>
   </div>
   <div class="grid md:grid-cols-3 gap-6 mb-12">
-    <div class="bg-white border rounded-xl p-6 shadow-lg flex flex-col justify-between">
-      <h3 class="font-bold text-lg mb-2 text-[#AF4B41]">Supreme!</h3>
-      <p class="text-gray-500 mb-4">More banana cake dishes to be discovered.</p>
-      <a href="#" class="text-blue-500 text-sm mt-auto">Read more</a>
-    </div>
-    <div class="bg-white border rounded-xl p-6 shadow-lg flex flex-col justify-between">
-      <h3 class="font-bold text-lg mb-2 text-[#AF4B41]">Subscribe to our Patrons!</h3>
-      <p class="text-gray-500 mb-4">Taste our experiments with different kinds of bananas.</p>
-      <a href="#" class="text-blue-500 text-sm mt-auto">Read more</a>
-    </div>
-    <div class="bg-white border rounded-xl p-6 shadow-lg flex flex-col justify-between">
-      <h3 class="font-bold text-lg mb-4 text-[#AF4B41] break-words">
-        "Life is full of bananas—sometimes sweet, sometimes a little mushy, but always worth peeling."
-      </h3>
-      <a href="#" class="text-blue-500 text-sm mt-auto">Read more</a>
-    </div>
+    <?= view('components/cards/card1', ['title' => 'Supreme!','excerpt' => 'More banana cake dishes to be discovered.','image' => 'https://linktoimage.com/image.jpg','href' => '#']) ?>
+    <?= view('components/cards/card2', ['title' => 'Life is full of bananas—sometimes sweet, sometimes a little mushy, but always worth peeling.', 'href' => '#']) ?>
+    <?= view('components/cards/card3', ['s' => ['id' => 1, 'title' => 'Banana Supreme Cake', 'description' => 'A delicious cake made with ripe bananas and exotic spices.', 'cost' => 12.99, 'category' => 'Desserts','created_at' => '2025-09-29','is_available' => true,'image' => 'https://linktoimage.com/cake.jpg']]) ?>
+  </div>
   </div>
 
   <div class="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center text-center mb-8">
