@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
 </style>
 </head>
 <body class="font-sans">
+  <?= view('components/header') ?>
   <div class="max-w-7xl mx-auto py-12 px-6 grid md:grid-cols-2 gap-8">
     <div class="bg-white shadow-lg rounded-xl p-8 flex flex-col items-center text-center">
         <h2 class="text-xl font-semibold tracking-wide text-gray-700">WYBIE’S</h2>
@@ -130,7 +132,7 @@
       </div>
     </div>
   </div>
-
 </div>
+<?= view('components/footer') ?>
 </body>
 </html>

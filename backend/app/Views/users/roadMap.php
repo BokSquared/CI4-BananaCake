@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,7 @@
         </style>
 </head>
 <body>
+<?= view('components/header') ?>
 <div class="max-w-7xl mx-auto px-6 py-12 space-y-6">
   <h2 class="text-2xl font-semibold text-gray-700 mb-4">Road Map</h2>
   <p class="mb-6 text-[#FFF3B0]">Our to-do list for Banana Odyssey.</p>
@@ -86,9 +88,8 @@
     <option value="done">Done</option>
   </select>
   </div>
-
 </div>
-
+<?= view('components/footer') ?>
 <script>
 function updateStatusColor(select) {
   switch(select.value) {
