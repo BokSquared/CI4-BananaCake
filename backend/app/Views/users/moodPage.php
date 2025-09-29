@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
 </style>
 </head>
 <body class="font-sans">
+  <?= view('components/header') ?>
   <div class="max-w-7xl mx-auto py-12 px-6 grid md:grid-cols-2 gap-8">
     <div class="bg-white shadow-lg rounded-xl p-8 flex flex-col items-center text-center">
         <h2 class="text-xl font-semibold tracking-wide text-gray-700">WYBIE’S</h2>
@@ -73,18 +75,17 @@
   <h2 class="text-xl font-semibold tracking-wide text-gray-700 mb-1">Buttons</h2>
     <h5 class="text-left text-gray-400 font-medium mb-1">Light mode</h5>
     <div class="flex gap-4 mb-6">
-        <button class="bg-[#9E2A2B] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#7b2022]">Primary</button>
-        <button class="bg-[#E09F3E] text-[#9E2A2B] px-4 py-2 rounded-lg font-semibold hover:bg-[#c4882f]">Secondary</button>
-        <button class="bg-transparent border border-[#E09F3E] text-[#9E2A2B] px-4 py-2 rounded-lg font-semibold hover:bg-[#E09F3E] hover:text-[#9E2A2B]">Border</button>
-
-        <button class="bg-gray-200 text-gray-400 px-4 py-2 rounded-lg font-semibold cursor-not-allowed" disabled>Disabled</button>
+        <?= view('components/buttons/button_primary', ['label' => 'Primary', 'href' => '#']); ?>
+        <?= view('components/buttons/button_secondary', ['label' => 'Secondary', 'href' => '#']); ?>
+        <?= view('components/buttons/button_border', ['label' => 'Border', 'href' => '#']); ?>
+        <?= view('components/buttons/button_primary', ['label' => 'Disabled', 'href' => '#', 'disable' => true]) ?>
     </div>
     <h5 class="text-left text-gray-400 font-medium mb-1">Dark mode</h5>
     <div class="bg-[#333333] p-6 rounded-xl flex gap-4 mb-6">
-        <button class="bg-[#9E2A2B] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#7b2022]">Primary</button>
-        <button class="bg-[#E09F3E] text-[#9E2A2B] px-4 py-2 rounded-lg font-semibold hover:bg-[#c4882f]">Secondary</button>
-        <button class="bg-transparent border border-[#E09F3E] text-[#9E2A2B] px-4 py-2 rounded-lg font-semibold hover:bg-[#E09F3E] hover:text-[#9E2A2B]">Border</button>
-        <button class="bg-gray-200 text-gray-400 px-4 py-2 rounded-lg font-semibold cursor-not-allowed" disabled>Disabled</button>
+        <?= view('components/buttons/button_primary', ['label' => 'Primary', 'href' => '#', 'dark' => true, 'disable' => false]) ?>
+        <?= view('components/buttons/button_secondary', ['label' => 'Secondary', 'href' => '#']) ?>
+        <?= view('components/buttons/button_border', ['label' => 'Border', 'href' => '#']) ?>
+        <?= view('components/buttons/button_primary', ['label' => 'Disabled', 'href' => '#', 'disable' => true]) ?>
     </div>
 </div>
 </div>
@@ -93,22 +94,10 @@
     <h2 class="text-2xl font-semibold tracking-wide text-gray-700">Card Samples</h2>
   </div>
   <div class="grid md:grid-cols-3 gap-6 mb-12">
-    <div class="bg-white border rounded-xl p-6 shadow-lg flex flex-col justify-between">
-      <h3 class="font-bold text-lg mb-2 text-[#AF4B41]">Supreme!</h3>
-      <p class="text-gray-500 mb-4">More banana cake dishes to be discovered.</p>
-      <a href="#" class="text-blue-500 text-sm mt-auto">Read more</a>
-    </div>
-    <div class="bg-white border rounded-xl p-6 shadow-lg flex flex-col justify-between">
-      <h3 class="font-bold text-lg mb-2 text-[#AF4B41]">Subscribe to our Patrons!</h3>
-      <p class="text-gray-500 mb-4">Taste our experiments with different kinds of bananas.</p>
-      <a href="#" class="text-blue-500 text-sm mt-auto">Read more</a>
-    </div>
-    <div class="bg-white border rounded-xl p-6 shadow-lg flex flex-col justify-between">
-      <h3 class="font-bold text-lg mb-4 text-[#AF4B41] break-words">
-        "Life is full of bananas—sometimes sweet, sometimes a little mushy, but always worth peeling."
-      </h3>
-      <a href="#" class="text-blue-500 text-sm mt-auto">Read more</a>
-    </div>
+    <?= view('components/cards/card1', ['title' => 'Supreme!','excerpt' => 'More banana cake dishes to be discovered.','image' => 'https://linktoimage.com/image.jpg','href' => '#']) ?>
+    <?= view('components/cards/card2', ['title' => 'Life is full of bananas—sometimes sweet, sometimes a little mushy, but always worth peeling.', 'href' => '#']) ?>
+    <?= view('components/cards/card3', ['s' => ['id' => 1, 'title' => 'Banana Supreme Cake', 'description' => 'A delicious cake made with ripe bananas and exotic spices.', 'cost' => 12.99, 'category' => 'Desserts','created_at' => '2025-09-29','is_available' => true,'image' => 'https://linktoimage.com/cake.jpg']]) ?>
+  </div>
   </div>
 
   <div class="bg-white shadow-lg rounded-xl p-6 flex flex-col items-center text-center mb-8">
@@ -130,7 +119,7 @@
       </div>
     </div>
   </div>
-
 </div>
+<?= view('components/footer') ?>
 </body>
 </html>
