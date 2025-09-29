@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-        background: linear-gradient(to right, rgba(246, 204, 128, 0.9), rgba(240, 157, 74, 0.9));
+         background: linear-gradient(to right, rgba(224, 159, 62, 0.9), rgba(158, 42, 43, 0.9));
     }
 </style>
 </head>
@@ -17,10 +17,10 @@
         <h2 class="text-xl font-semibold tracking-wide text-gray-700">WYBIE’S</h2>
         <p class="tracking-[0.6em] uppercase text-sm text-gray-500 mb-6">Palette</p>
     <div class="flex gap-4 mb-8">
-        <div class="h-8 w-16 rounded-full bg-[#FFD369]"></div>
-        <div class="h-8 w-16 rounded-full bg-[#AF4B41]"></div>
-        <div class="h-8 w-16 rounded-full bg-[#F5E1C8]"></div>
-        <div class="h-8 w-16 rounded-full bg-[#D29E69]"></div>
+        <div class="h-8 w-16 rounded-full bg-[#E09F3E]"></div> 
+        <div class="h-8 w-16 rounded-full bg-[#9E2A2B]"></div> 
+        <div class="h-8 w-16 rounded-full bg-[#FFF3B0]"></div> 
+        <div class="h-8 w-16 rounded-full bg-[#333333]"></div> 
     </div>
     <div class="grid grid-cols-2 gap-2 mb-8">
         <img src="https://hips.hearstapps.com/hmg-prod/images/banana-cake-vertical-2-668d5778abfc2.jpg?resize=768:*" class="rounded-lg object-cover h-24 w-full">
@@ -29,18 +29,18 @@
         <img src="https://www.thespruceeats.com/thmb/rRgACcJGrtpYOhAAkA4n-Ovsyi0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/perfect-banana-split-recipe-305712-hero-01-ef0482a539394da0b5ba64ade0c73b98.jpg" class="rounded-lg object-cover h-24 w-full">
     </div>
     <div class="w-full h-40 flex flex-row gap-x-3">
-        <div class="flex-1 rounded-l-lg bg-[#FFD369]"></div>
-        <div class="flex-1 bg-[#AF4B41]"></div>
-        <div class="flex-1 bg-[#F5E1C8]"></div>
-        <div class="flex-1 rounded-r-lg bg-[#D29E69]"></div>
+        <div class="flex-1 rounded-l-lg bg-[#E09F3E]"></div>
+        <div class="flex-1 bg-[#9E2A2B]"></div>
+        <div class="flex-1 bg-[#FFF3B0]"></div>
+        <div class="flex-1 rounded-r-lg bg-[#333333]"></div>
     </div>
 </div>
 
 <div class="bg-white shadow-lg rounded-xl p-8 flex flex-col items-center text-center">
     <h2 class="text-xl font-semibold tracking-wide text-gray-700 mb-6">BRAND VIBE</h2>
     <div class="grid grid-cols-4 gap-2 mb-8">
-        <div class="h-60 w-full rounded-2xl bg-[#FFD369] flex items-center justify-center text-[#AF4B41] font-bold text-2xl shadow-md">🍌</div>
-        <div class="h-60 w-full rounded-2xl bg-[#AF4B41] flex items-center justify-center text-[#FFD369] font-bold text-2xl shadow-md">🎂</div>
+        <div class="h-60 w-full rounded-2xl bg-[#E09F3E] flex items-center justify-center text-[#AF4B41] font-bold text-2xl shadow-md">🍌</div>
+        <div class="h-60 w-full rounded-2xl bg-[#9E2A2B] flex items-center justify-center text-[#FFD369] font-bold text-2xl shadow-md">🎂</div>
         <div class="grid grid-cols-2 gap-2 w-full col-span-2">
             <img src="https://www.shutterstock.com/image-photo/assorted-pastry-bread-arranged-on-600nw-2169704423.jpg" 
             class="rounded-lg object-cover h-24 w-full">
@@ -65,7 +65,7 @@
   <h5 class="text-left text-gray-400 font-medium mb-1">Heading font</h5>
     <p class="text-3xl font-extrabold text-[#AF4B41] mb-2" style="font-family: 'Playfair Display', serif;">Playfair Display</p>
     <h5 class="text-left text-gray-400 font-medium mb-1">Body font</h5>
-    <p class="text-2xl font-semibold text-[#FFD369] mb-2" style="font-family: 'Poppins', sans-serif;">Poppins</p>
+    <p class="text-2xl font-semibold text-[#FFD369] mb-2" style="font-family: 'Lato', sans-serif;">Lato</p>
     <p class="text-gray-600 text-sm mb-4">Elegant, friendly, and modern fonts for a cozy bakery vibe.</p>
 </div>
 
@@ -73,16 +73,17 @@
   <h2 class="text-xl font-semibold tracking-wide text-gray-700 mb-1">Buttons</h2>
     <h5 class="text-left text-gray-400 font-medium mb-1">Light mode</h5>
     <div class="flex gap-4 mb-6">
-        <button class="bg-[#AF4B41] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#9b3e36] transition dark:bg-[#8c3b34] dark:text-white dark:hover:bg-[#752f29]">Primary</button>
-        <button class="bg-[#FFD369] text-[#AF4B41] px-4 py-2 rounded-lg font-semibold hover:bg-[#e6c35b] transition dark:bg-[#D29E69] dark:text-[#FFD369] dark:hover:bg-[#c99055]">Secondary</button>
-        <button class="bg-transparent border border-[#FFD369] text-[#AF4B41] px-4 py-2 rounded-lg font-semibold hover:bg-[#FFD369] hover:text-[#AF4B41] transition dark:border-[#D29E69] dark:text-[#FFD369] dark:hover:bg-[#D29E69] dark:hover:text-[#AF4B41]">Border</button>
+        <button class="bg-[#9E2A2B] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#7b2022]">Primary</button>
+        <button class="bg-[#E09F3E] text-[#9E2A2B] px-4 py-2 rounded-lg font-semibold hover:bg-[#c4882f]">Secondary</button>
+        <button class="bg-transparent border border-[#E09F3E] text-[#9E2A2B] px-4 py-2 rounded-lg font-semibold hover:bg-[#E09F3E] hover:text-[#9E2A2B]">Border</button>
+
         <button class="bg-gray-200 text-gray-400 px-4 py-2 rounded-lg font-semibold cursor-not-allowed" disabled>Disabled</button>
     </div>
     <h5 class="text-left text-gray-400 font-medium mb-1">Dark mode</h5>
-    <div class="bg-[#5C1C1C] p-6 rounded-xl flex gap-4 mb-6">
-        <button class="bg-[#AF4B41] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#9b3e36] transition dark:bg-[#8c3b34] dark:text-white dark:hover:bg-[#752f29]">Primary</button>
-        <button class="bg-[#FFD369] text-[#AF4B41] px-4 py-2 rounded-lg font-semibold hover:bg-[#e6c35b] transition dark:bg-[#D29E69] dark:text-[#FFD369] dark:hover:bg-[#c99055]">Secondary</button>
-        <button class="bg-transparent border border-[#FFD369] text-[#AF4B41] px-4 py-2 rounded-lg font-semibold hover:bg-[#FFD369] hover:text-[#AF4B41] transition dark:border-[#D29E69] dark:text-[#FFD369] dark:hover:bg-[#D29E69] dark:hover:text-[#AF4B41]">Border</button>
+    <div class="bg-[#333333] p-6 rounded-xl flex gap-4 mb-6">
+        <button class="bg-[#9E2A2B] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#7b2022]">Primary</button>
+        <button class="bg-[#E09F3E] text-[#9E2A2B] px-4 py-2 rounded-lg font-semibold hover:bg-[#c4882f]">Secondary</button>
+        <button class="bg-transparent border border-[#E09F3E] text-[#9E2A2B] px-4 py-2 rounded-lg font-semibold hover:bg-[#E09F3E] hover:text-[#9E2A2B]">Border</button>
         <button class="bg-gray-200 text-gray-400 px-4 py-2 rounded-lg font-semibold cursor-not-allowed" disabled>Disabled</button>
     </div>
 </div>
