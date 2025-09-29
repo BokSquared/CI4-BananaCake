@@ -75,18 +75,17 @@
   <h2 class="text-xl font-semibold tracking-wide text-gray-700 mb-1">Buttons</h2>
     <h5 class="text-left text-gray-400 font-medium mb-1">Light mode</h5>
     <div class="flex gap-4 mb-6">
-        <button class="bg-[#9E2A2B] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#7b2022]">Primary</button>
-        <button class="bg-[#E09F3E] text-[#9E2A2B] px-4 py-2 rounded-lg font-semibold hover:bg-[#c4882f]">Secondary</button>
-        <button class="bg-transparent border border-[#E09F3E] text-[#9E2A2B] px-4 py-2 rounded-lg font-semibold hover:bg-[#E09F3E] hover:text-[#9E2A2B]">Border</button>
-
-        <button class="bg-gray-200 text-gray-400 px-4 py-2 rounded-lg font-semibold cursor-not-allowed" disabled>Disabled</button>
+        <?= view('components/buttons/button_primary', ['label' => 'Primary', 'href' => '#']); ?>
+        <?= view('components/buttons/button_secondary', ['label' => 'Secondary', 'href' => '#']); ?>
+        <?= view('components/buttons/button_border', ['label' => 'Border', 'href' => '#']); ?>
+        <?= view('components/buttons/button_primary', ['label' => 'Disabled', 'href' => '#', 'disable' => true]) ?>
     </div>
     <h5 class="text-left text-gray-400 font-medium mb-1">Dark mode</h5>
     <div class="bg-[#333333] p-6 rounded-xl flex gap-4 mb-6">
-        <button class="bg-[#9E2A2B] text-white px-4 py-2 rounded-lg font-semibold hover:bg-[#7b2022]">Primary</button>
-        <button class="bg-[#E09F3E] text-[#9E2A2B] px-4 py-2 rounded-lg font-semibold hover:bg-[#c4882f]">Secondary</button>
-        <button class="bg-transparent border border-[#E09F3E] text-[#9E2A2B] px-4 py-2 rounded-lg font-semibold hover:bg-[#E09F3E] hover:text-[#9E2A2B]">Border</button>
-        <button class="bg-gray-200 text-gray-400 px-4 py-2 rounded-lg font-semibold cursor-not-allowed" disabled>Disabled</button>
+        <?= view('components/buttons/button_primary', ['label' => 'Primary', 'href' => '#', 'dark' => true, 'disable' => false]) ?>
+        <?= view('components/buttons/button_secondary', ['label' => 'Secondary', 'href' => '#']) ?>
+        <?= view('components/buttons/button_border', ['label' => 'Border', 'href' => '#']) ?>
+        <?= view('components/buttons/button_primary', ['label' => 'Disabled', 'href' => '#', 'disable' => true]) ?>
     </div>
 </div>
 </div>
