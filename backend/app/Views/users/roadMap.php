@@ -8,8 +8,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, rgba(246, 204, 128, 0.9), rgba(240, 157, 74, 0.9)),
-                        url('https://www.pixelstalk.net/wp-content/uploads/2016/10/Banana-Wallpaper-Full-HD.jpg');
+            background: linear-gradient(to right, rgba(224, 159, 62, 0.9), rgba(158, 42, 43, 0.9)),
+                    url('https://www.pixelstalk.net/wp-content/uploads/2016/10/Banana-Wallpaper-Full-HD.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -20,15 +20,15 @@
 <body>
 <div class="max-w-7xl mx-auto px-6 py-12 space-y-6">
   <h2 class="text-2xl font-semibold text-gray-700 mb-4">Road Map</h2>
-  <p class="text-gray-500 mb-6">Our to-do list for Wybie's Banana Cakes.</p>
+  <p class="mb-6 text-[#FFF3B0]">Our to-do list for Banana Odyssey.</p>
 
   <div class="bg-white shadow-lg rounded-xl p-6 flex justify-between items-start">
     <div>
-      <h3 class="font-semibold text-lg text-[#AF4B41] mb-1">Banana Cake Menus</h3>
+      <h3 class="font-semibold text-lg text-[#9E2A2B] mb-1">Banana Cake Menus</h3>
       <p class="text-gray-600 mb-2">Display and manage products for ordering.</p>
       <p class="text-sm font-medium text-gray-500">Priority: High</p>
     </div>
-    <select id="status-1" class="px-3 py-1 rounded-full font-semibold text-sm text-[#AF4B41]" onchange="updateStatusColor(this)">
+    <select id="status-1" class="px-3 py-1 rounded-full font-semibold text-sm text-[#9E2A2B]" onchange="updateStatusColor(this)">
     <option value="planned" selected>Planned</option>
     <option value="in-progress">In Progress</option>
     <option value="done">Done</option>
@@ -93,16 +93,16 @@
 function updateStatusColor(select) {
   switch(select.value) {
     case 'planned':
-      select.style.backgroundColor = '#FFD369';
-      select.style.color = '#AF4B41';
+      select.style.backgroundColor = '#E09F3E';
+      select.style.color = '#FFF3B0';
       break;
     case 'in-progress':
-      select.style.backgroundColor = '#ffb62fff';
-      select.style.color = '#AF4B41';
+      select.style.backgroundColor = '#9E2A2B';
+      select.style.color = '#FFF3B0';
       break;
     case 'done':
-      select.style.backgroundColor = '#bcffbeff'; 
-      select.style.color = '#AF4B41';
+      select.style.backgroundColor = '#333333'; 
+      select.style.color = '#FFF3B0';
       break;
   }
 }

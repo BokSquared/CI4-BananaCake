@@ -4,19 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Lato;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background:
-        linear-gradient(rgba(204,153,0,0.12), rgba(204,153,0,0.21)),
-        url('https://www.pixelstalk.net/wp-content/uploads/2025/08/banana-desktop-wallpaper-HD-highly-detailed-bananas-in-a-tropical-setting-with-lush-green-leaves-and-bright-lighting.jpg');
+      background: url('https://s1.1zoom.me/big0/381/Bananas_Kettle_Still-life_Sugar_581880_722x1024.jpg');
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
       color: #fff;
     }
 
