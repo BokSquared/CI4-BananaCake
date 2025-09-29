@@ -196,6 +196,7 @@
       margin-bottom: 40px;
       color: var(--accent);
     }
+
     .testimonial-card {
       background: var(--accent);
       padding: 25px;
@@ -204,22 +205,21 @@
       margin: 20px 0;
       transition: transform 0.3s ease;
     }
+
     .testimonial-card:hover {
       transform: scale(1.05);
     }
+
     .testimonial-text {
       font-size: 18px;
       font-style: italic;
       color: var(--neutral);
     }
+
     .testimonial-author {
       font-weight: bold;
       margin-top: 15px;
       color: var(--secondary);
-    }
-
-    [data-aos] {
-      animation-duration: 1s;
     }
   </style>
 </head>
@@ -285,29 +285,33 @@
   </section>
 
   <section class="testimonials">
-    <h2>The Oracle Speaks</h2>
+    <h2>The Oracle Speaks (and Peels Back the Truth)</h2>
     <div class="row justify-content-center">
       <div class="col-md-4" data-aos="fade-up">
         <div class="testimonial-card">
-          <p class="testimonial-text">“Truly divine. A cake worthy of Zeus himself.”</p>
+          <p class="testimonial-text">“Un-peel-ievably good — I’m bananas for it!”</p>
           <p class="testimonial-author">— Cassandra</p>
         </div>
       </div>
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
         <div class="testimonial-card">
-          <p class="testimonial-text">“Each bite is a journey to Olympus!”</p>
+          <p class="testimonial-text">“Every bite is a bunch of joy — truly a peel of heaven!”</p>
           <p class="testimonial-author">— Dion</p>
         </div>
       </div>
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
         <div class="testimonial-card">
-          <p class="testimonial-text">“Golden, sweet, and unforgettable!”</p>
+          <p class="testimonial-text">“I’m split between saying it’s divine or just a-peeling.”</p>
           <p class="testimonial-author">— Hera</p>
         </div>
       </div>
     </div>
-  </section>
+</section>
+<?= view('components/cta', ['label' => 'Order Today!','href' => '/signup', 'bgImage' => 'https://i.pinimg.com/736x/59/58/04/595804daa165b11a56194b6cff5893b6.jpg']) ?>
+
+
 <?= view('components/footer') ?>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 1200, once: true });
