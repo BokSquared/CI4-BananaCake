@@ -38,6 +38,11 @@ DOCUMENTATION
 - Redesigned the landing page 
 - Added header, footer, 4 buttons, 3 cards and cta 
 
+To Do (I'm from lab)
+- ReadMe description 
+- head.php
+- profile & environment installation
+
 <br/>
 
 ![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/ci4-template)
