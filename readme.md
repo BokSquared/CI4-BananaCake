@@ -8,28 +8,29 @@
     <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- * Title Section -->
-  <h3 align="center">AD - CI4 - BananaCake - Japon </h3>
+  <h3 align="center">AD - CI4 - Banana Odyssey</h3>
 </div>
 
 <!-- * Description Section -->
 <div align="center">
-This repository is a beginner-friendly CodeIgniter 4 template.  
-It helps teams quickly bootstrap backend + frontend projects, with simple sample modules that show how to extend the system.
+A CodeIgniter 4 project template designed for students and teams to practice modern PHP development and GitHub workflows.  
+This repository demonstrates how to build a customer-facing banana cake ordering system, with sample modules and best practices for CI4.
 </div>
 
 <div align="center">
-Bokbokbok saging
+For customers who want banana cake.  
+Practice for CI4 and GitHub.  
 </div>
 
 DOCUMENTATION
 - Created a landing page HTML with minimal CSS in app/Views
 - Configured the app/Controllers/Users.php
-- Configred the Routes into Users::Index in app/Config/Routes.php
+- Configured the Routes into Users::Index in app/Config/Routes.php
 - Updated the CSS of landing page
 
 (Sept 23, 2025)
 - Finished the landing page
-- Addded Log In page 
+- Added Log In page 
 - Added Sign up page 
 - Added Mood Board 
 - Added Road Map 
@@ -81,22 +82,25 @@ To Do (I'm from lab)
 
 ## Overview
 
-This template provides a **minimal CodeIgniter 4 project layout** with conventions for file organization, commit practices, and simple modules.
+AD - CI4 - Banana Odyssey is a formal practice project for CodeIgniter 4 and GitHub workflows.  
+It provides a structured template for building a customer-facing banana cake ordering system, with clear conventions for file organization, commits, and modular development.
 
-It is designed to be **easy to start with** and a **reference for adding new features**.
+This repository is intended for students and beginner developers seeking hands-on experience with CI4, Docker, and PHP.  
+It serves as a reference for rapid prototyping and onboarding, while demonstrating best practices for maintainable code.
 
-* **Purpose**: a clean starting point for CI4 apps.
-* **Audience**: developers who want a predictable structure and quick onboarding.
+* **Purpose**: To help students and teams quickly build and extend a CI4 application for a real-world use case.
+* **Audience**: Customers interested in banana cake, and developers practicing CI4 and GitHub.
 
 ### Key Components
 
-These are **sample modules** included (or suggested) for learning how to add features:
+The project includes the following sample modules and features:
 
 | Component                 | Purpose                                                             | Notes                                                   |
 | ------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------- |
-| **Auth (Sample)**         | Basic login/logout and role check (admin/user).                     | Uses CI4 sessions + MySQL `users` table.                |
+| **Auth (Sample)**         | Basic login/logout, ordering system, and menu system.                     | Uses CI4 sessions + MySQL `users` table.                |
 | **CRUD Module**           | Example entity (`Posts` or `Tasks`) with create/read/update/delete. | Demonstrates Controller → Service → Repository pattern. |
 | **Scheduler (Sample)**    | Simple to-do list with due dates.                                   | Shows how to extend with new tables and services.       |
+| **Landing Page**          | Customer-facing UI for banana cake orders.                          | Includes header, footer, CTA, cards, and mood board.    |
 
  <!-- ! Start simple. Use these modules as **learning samples**; extend or replace them based on your project’s needs. -->
 
@@ -104,22 +108,22 @@ These are **sample modules** included (or suggested) for learning how to add fea
 
 #### Language
 
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge\&logo=php\&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
 #### Framework/Library
 
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge\&logo=tailwindcss\&logoColor=white)
-![CodeIgniter](https://img.shields.io/badge/CodeIgniter-EF4223?style=for-the-badge\&logo=codeigniter\&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![CodeIgniter](https://img.shields.io/badge/CodeIgniter-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white)
 
 #### Databases
 
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge\&logo=postgresql\&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge\&logo=mongodb\&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge\&logo=firebase\&logoColor=black)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 
 <!-- ! Keep only the used technology -->
 
@@ -208,7 +212,7 @@ Be careful: seeding and truncating are destructive operations — run only on lo
    | ---------------- | ----------- | ------------------------- |
    | Classes          | PascalCase  | `UserService.php`         |
    | Interfaces       | PascalCase  | `UserRepositoryInterface` |
-   | DB tables/fields | snake\_case | `users`, `created_at`     |
+   | DB tables/fields | snake_case  | `users`, `created_at`     |
    | Docs             | kebab-case  | `dev-manual.md`           |
 
 4. Git commits use: `feat`, `fix`, `docs`, `refactor`.
