@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Road Map</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, rgba(224, 159, 62, 0.9), rgba(158, 42, 43, 0.9)),
-                    url('https://www.pixelstalk.net/wp-content/uploads/2016/10/Banana-Wallpaper-Full-HD.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            padding: 0;
-        }
-        </style>
+<?= view('components/head', ['title' => '🍌Banana Road Map']) ?>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          background: linear-gradient(to right, rgba(224, 159, 62, 0.9), rgba(158, 42, 43, 0.9)),
+                  url('https://www.pixelstalk.net/wp-content/uploads/2016/10/Banana-Wallpaper-Full-HD.jpg');
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          padding: 0;
+      }
+  </style>
 </head>
 <body>
 <?= view('components/header') ?>

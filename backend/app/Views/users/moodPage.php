@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mood Board</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<?= view('components/head', ['title' => '🍌Banana Mood Board']) ?>
   <style>
     body {
          background: linear-gradient(to right, rgba(224, 159, 62, 0.9), rgba(158, 42, 43, 0.9));
     }
 </style>
 </head>
-<body class="font-sans">
+<body>
   <?= view('components/header') ?>
   <div class="max-w-7xl mx-auto py-12 px-6 grid md:grid-cols-2 gap-8">
     <div class="bg-white shadow-lg rounded-xl p-8 flex flex-col items-center text-center">
