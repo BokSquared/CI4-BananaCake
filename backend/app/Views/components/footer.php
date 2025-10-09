@@ -25,9 +25,9 @@
 
     <div class="flex-1 grid grid-cols-2 gap-6">
     <ul class="space-y-2 text-sm">
-        <li><a href="<?= base_url('/home') ?>" class="hover:text-yellow-200">Home</a></li>
-        <li><a href="<?= base_url('/about') ?>" class="hover:text-yellow-200">About</a></li>
-        <li><a href="<?= base_url('/contact') ?>" class="hover:text-yellow-200">Contact</a></li>
+        <li><a href="<?= base_url('/') ?>" class="hover:text-yellow-200">Home</a></li>
+        <li><a href="<?= base_url('#') ?>" class="hover:text-yellow-200">About</a></li>
+        <li><a href="<?= base_url('#') ?>" class="hover:text-yellow-200">Contact</a></li>
     </ul>
 
     <ul class="space-y-2 text-sm">
